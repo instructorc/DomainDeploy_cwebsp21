@@ -40,11 +40,55 @@
 
             #container{
           
-                width: 1000px;
+                width: 950px;
                 margin: auto;
 
             }
-        </style>
+            header {
+                line-height: 1.2;
+                text-align: center;
+                margin-bottom: 3%
+            }
+            h2{
+                font-size: 1.5em;
+            } 
+            h3 {
+                font-size: 1.3em;
+                font-weight: 100;
+            }
+            p{
+                margin-bottom: 3%;
+            }
+            img[src*="filestructure"]{
+            
+                display: block;
+                margin: auto;
+            } 
+            ol{
+                margin-left: 2%;
+                line-height: 2;
+            } 
+            input[type="text"] {
+                border: none;
+                border-bottom: 1px solid black;
+                width: 50%;
+                margin-left: 2%;
+                outline: none;
+            }  
+            #footer{
+                width: 100%;
+                height: 100px;
+                background-color: #c7c7c7;
+                margin-bottom: 2%;
+                margin-top: 2%;
+            } 
+            img[src*="itwork"] {
+                display: block;
+                float: right;
+                margin-top: 3%;
+                margin-right: 1%;
+            }
+            </style>
     </head>
     <body> <!-- Everything that gets visually rendered.-->
         <div id="container">
@@ -54,7 +98,7 @@
                 <h3>Allotted Time: 10 minutes | Difficulty Level: Beginner | 5 questions</h3>
             </header>
             <main>
-                <p>Directions: This assignment will focus on understanding relative and absolute file paths. Please use the diagram below to fill
+                <p style="font-weight: 900;">Directions: This assignment will focus on understanding relative and absolute file paths. Please use the diagram below to fill
                     in the correct file path for each of the 5 questions below. </p>
                 <a href="http://google.com"><img src="img/filestructure.PNG" alt="Picture of File Structure"/></a>
                 <hr>
@@ -66,8 +110,8 @@
                     <li>What is the relative file path to banner.jpg from contact.html file?<input type="text" size="20"> </li>
                 </ol>
             </main>
-            <footer>
-                <img src="img/itworksheets[logo].png" width="200" alt="I T worksheets logo">
+            <footer id="footer">
+                <img src="img/itworksheets[logo].png" width="275" alt="I T worksheets logo">
             </footer>
         </div><!--Closing div id container tag-->
     </body>
