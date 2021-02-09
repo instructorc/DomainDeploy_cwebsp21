@@ -13,6 +13,13 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <!--Internal CSS (Page Specific)-->
         <style>
+
+            @font-face {
+            font-family: 'calibril';
+            src:  url('fonts/calibril.woff2') format('woff2'),
+                    url('fonts/calibril.woff') format('woff');
+            }
+
             html, body, div, span, object, iframe,
             h1, h2, h3, h4, h5, h6, p, blockquote, pre,
             abbr, address, cite, code,
@@ -35,19 +42,21 @@
             }
 
             body {
-            line-height:1;
+                line-height:1;
+                font-family: 'calibril';
             }
 
             #container{
           
-                width: 950px;
+                width: 925px;
                 margin: auto;
 
             }
             header {
                 line-height: 1.2;
                 text-align: center;
-                margin-bottom: 3%
+                margin-bottom: 3%;
+                margin-top: 5%;
             }
             h2{
                 font-size: 1.5em;
