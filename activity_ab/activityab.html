@@ -3,8 +3,10 @@
        <head>
 		<!--The head tag communicates information about the html document -->
 		<title>Basic Structure </title>
-        <!--Internal CSS-->
+
         <style>
+            /** width, border-radius, border: 10px solid #333, margin, float, 
+            background-color, font-family, font-weight**/
             .boxes{
                 width: 250px;
                 height: 250px;
@@ -12,15 +14,17 @@
                 border: 10px solid #333;
                 margin: 12px;
                 float: left;
-                background-color: #BDD358;
-                font-family:Arial, Helvetica, sans-serif;
+                background-color:  #BDD358;
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: bolder;
             }
         </style>
 	</head>
 	<body>
-		<div class="boxes"> #1 </div>
-		<div class="boxes"> #2 </div>
-		<div class="boxes"> #3 </div>
+        <div id="container">
+            <div class="boxes"> #1 </div>
+            <div class="boxes"> #2 </div>
+            <div class="boxes"> #3 </div>
+        </div>
 	</body>
 </html>
