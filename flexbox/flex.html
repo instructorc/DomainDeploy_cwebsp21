@@ -6,12 +6,12 @@
         <!--Internal CSS-->
         <style>
             .boxes{
-                width: 230px;
+                
                 height: 250px;
                 border-radius: 14px;
                 border: 10px solid #333;
                 margin: 12px;
-                float: left;
+                flex: 1 0 350px;
                 background-color: #BDD358;
                 font-family:Arial, Helvetica, sans-serif;
                 font-weight: bolder;
@@ -21,12 +21,12 @@
                 padding-top: 14%;
             }
             #container{
-                width: 900px;
+                width: 70%;
                 margin: auto;
             }
 
             .targetmain{
-                width: 300px;
+              flex-grow: 3;
             }
             .structure{
                 float: none;
@@ -36,14 +36,26 @@
                 padding-top: 0;
                 width: 100%;
             }
+            /**Implementing Flexbox**/
+            #flexcontainer{
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
         </style>
 	</head>
 	<body>
         <div id="container">
             <header class="boxes structure"></header>
-            <aside class="boxes"> #1 </aside>
-            <main class="boxes targetmain"> #2 </main>
-            <aside class="boxes"> #3 </aside>
+            <div id="flexcontainer">
+                <!--Flex items-->
+                <aside class="boxes"> #1 </aside>
+                <main class="boxes targetmain"> #2 - grow 3 </main>
+                <aside class="boxes"> #3 </aside>
+                <aside class="boxes"> #4 </aside>
+                <main class="boxes targetmain"> #5 grow 3 </main>
+                <aside class="boxes"> #6 </aside>
+            </div>
             <footer class="boxes structure"></footer>
         </div>
 	</body>
