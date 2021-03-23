@@ -8,24 +8,30 @@
         <!--Internal CSS-->
         <style>
           .boxes{
-                width: 250px;
+              
                 height: 250px;
+                flex: 1 0 250px;
                 border-radius: 14px;
                 border: 10px solid #333;
                 margin: 12px;
                 text-align: center;
                 font-size: 4em;
-                float: left;
+               
                 background-color: #bdd358;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: bolder;
                 padding-top: 14%;
                
             }
-           #container{
-               width: 900px;
+           #container{ 
+               width:80%;
                margin: auto;
                color: white;
+           }
+           #flexcontainer{
+               display: flex;
+               flex-wrap: wrap;
+               
            }
            header{
             border-radius: 14px;
@@ -48,14 +54,22 @@
                height: 100px;
                clear: both;
            }
+           .change{
+              
+           }
         </style>
 	</head>
 	<body>
         <div id="container">
             <header>Header</header>
-            <nav class="boxes"> #1 </nav>
-            <article class="boxes"> #2 </article>
-            <aside class="boxes"> #3 </aside>
+            <div id="flexcontainer">
+                <nav class="boxes"> #1 </nav>
+                <article class="boxes"> #2 </article>
+                <aside class="boxes"> #3 </aside>
+                <nav class="boxes"> #4 </nav>
+                <article class="boxes change"> #5 </article>
+                <aside class="boxes"> #6 </aside>
+            </div>
             <footer></footer>
         </div>
 	</body>
