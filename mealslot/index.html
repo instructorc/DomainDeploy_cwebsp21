@@ -7,22 +7,67 @@
         <meta name="keywords" content="Meal Planning, Meal prep">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Internal CSS-->
+        <style>
+            #grid_container{
+                display: grid;
+                height: 100vh;
+                width: 100%;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 110px 3fr 3fr 2fr 2fr;
+            }
+            #head_struct{
+                background-color: blue;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                width: 100%;
+                height: 100%;
+            }
+            #banner{
+                background-color: green;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            #main_area{
+                border: 1px solid black;
+            }
+            #as_seen_on{
+                border: 1px solid orangered;
+            }
+            #site_footer{
+                border: 1px solid purple;
+            }
+
+        </style>
     </head>
     <body>
-        <header>
-            <img src="" alt="logo">
-            <nav>
-                <a href="/signup">Sign-up</a>
-                <a href="/manage">Manage Meals</a>
-            </nav>
-        </header>
-        <div id="banner">
-            <h2>PotLuck? BBQ? Party? Invite others via Text or Email to Contribute</h2>
-            <div id="createmeal">Create a Meal</div>
+        <div id="grid_container">
+            <header id="head_struct">
+                <img src="" alt="logo">
+                <nav>
+                    <a href="/signup">Sign-up</a>
+                    <a href="/manage">Manage Meals</a>
+                </nav>
+            </header>
+            <div id="banner">
+                <h2>PotLuck? BBQ? Party? Invite others via Text or Email to Contribute</h2>
+                <div id="createmeal">Create a Meal</div>
 
-        </div>
-        <footer>
+            </div>
+            <main id="main_area"><!--My main Flex container -->
+                <section class="main_area_content"><!-- first Flex item-->
+                    <h2>4 Easy Steps</h2>
+                </section>
+                <img class="main_area_content" src="" alt=""/><!--Second flex item-->
+            </main>
+            <section id="as_seen_on"></section>
+            <footer id="site_footer">
 
-        </footer>
+            </footer>
+        </div><!--Closing Grid container div tag-->
     </body>
 </html>
