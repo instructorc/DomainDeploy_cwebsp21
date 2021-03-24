@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Example</title>
+        <style>
+            #flexcontainer{
+                display: flex;
+                width: 80%;
+                margin: auto;
+                flex-wrap: wrap;
+                
+            }
+            .flexitems{
+               
+                height: 200px;
+                margin: 2%;
+                border: 1px solid black;
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 200px;
+            }
+            .changeorder{
+            
+                flex-grow: 3;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="flexcontainer">
+            <div class="flexitems">1</div>
+            <div class="flexitems">2</div>
+            <div class="flexitems">3</div>
+            <div class="flexitems">4</div>
+            <div class="flexitems">5</div>
+            <div class="flexitems">6</div>
+            <div class="flexitems changeorder">7</div>
+            <div class="flexitems">8</div>
+            <div class="flexitems">9</div>
+        </div>
+    </body>
+</html>
