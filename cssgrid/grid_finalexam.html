@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid Example</title>
+        <!--Internal CSS-->
+        <style>
+            #gridcontainer{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas: "head head head head" 
+                                     "side main main main" 
+                                     "side main main main" 
+                                     "foot foot foot foot";
+                width: 80%;
+                height: 100vh;
+                margin: auto;
+            }
+            #headerstruct{
+                border: 2px solid green;
+                grid-area: head;
+           
+            }
+            #sidebar{
+                border: 2px solid gold;
+                grid-area: side;
+               
+            }
+            #mainarea{
+                border: 2px solid red;
+                grid-area: main;
+            }
+            #foot{
+                border: 2px solid blue;
+                grid-area: foot;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="gridcontainer">
+            <header id="headerstruct"></header>
+            <aside id="sidebar"></aside>
+            <main id="mainarea"></main>
+            <footer id="foot"></footer>
+        </div>
+    </body>
+</html>

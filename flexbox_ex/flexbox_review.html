@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Review</title>
+        <!--Internal CSS-->
+        <style>
+            #flexcontainer{
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: auto;
+            }
+            #headerstruct{
+                border: 2px solid green;
+                flex: 1 0 100%;
+                height: 150px;
+            }
+            #sidebar{
+                border: 2px solid gold;
+                flex: 1 0 150px;
+                height: 750px;
+            }
+            #mainarea{
+                border: 2px solid red;
+                flex: 3 0 400px;
+                height: 750px;
+            }
+            #foot{
+                border: 2px solid blue;
+                flex: 1 0 100%;
+                height: 175px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="flexcontainer">
+            <header id="headerstruct"></header>
+            <aside id="sidebar"></aside>
+            <main id="mainarea"></main>
+            <footer id="foot"></footer>
+        </div>
+    </body>
+</html>
