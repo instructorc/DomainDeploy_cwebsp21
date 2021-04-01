@@ -4,44 +4,113 @@
         <title>MealSlot.com | #1 Destination to plan a group meal</title>
         <!--Internal CSS-->
         <style>
+            * {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+            }
+
+            body {
+            line-height:1;
+            }
+
+            #grid_container{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 100px 500px 3fr 300px 2fr;
+            }
+            #site_contain{
+                width: 90%;
+                margin: auto;
+                border: 2px solid black;
+            }
             #headstructure{
                 width: 100%;
                 height: 100px;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
                 border: 2px solid blue;
+            }
+            #nav_struct {
+                float: right;
+            }
+            img[src*="logo.png"] {
+                float: left;
+                margin-top: 2%;
             }
             #banner{
                 width: 100%;
-                height: 400px;
-                border: 2px solid green;
+                background-image: url("./img/mealslot_banner_crop.png");
+                background-size: 100%;
+                background-position: center;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                background-color: green;
             }
             #main_section{
                 width: 100%;
-                height: 600px;
-                border: 2px solid purple;
+                
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                background-color: purple;
+            }
+            #bottom_section{
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                background-color: aqua;
+            }
+            #static_footer{
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 5;
+                grid-row-end: 6;
+                background-color: red;
             }
 
         </style>
     </head>
     <body>
-        <header id="headstructure">
-            <img src="img/logo.png" alt="logo">
-
-        </header>
-        <div id="banner"></div>
-        <main id="main_section">
-            <section class="mainarea">
-                <h2>4 Easy</h2>
+        <div id="grid_container">
+            <header id="headstructure">
+                <div id="site_contain">
+                    <img src="img/mealslot_master_logo.png" width="200" alt="logo">
+                    <nav id="nav_struct">
+                        <ul>
+                            <li>Sign-up</li>
+                            <li>Manage Meals</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id="banner"></div>
+            <main id="main_section">
+                <section class="mainarea">
+                    <h2>4 Easy</h2>
+                </section>
+                <section class="mainarea">
+                    <img src="img/limecuttingboard.png" alt="image">
+                </section>
+            </main>
+            <section id="bottom_section">
+                <h2>As Seen on</h2>
             </section>
-            <section class="mainarea">
-                <img src="img/limecuttingboard.png" alt="image">
-            </section>
-        </main>
-        <section id="bottom_section">
-            <h2>As Seen on</h2>
-        </section>
-        <footer id="static_footer">
+            <footer id="static_footer">
 
-        </footer>
-
+            </footer>
+        </div>
     </body>
 </html>
