@@ -93,6 +93,14 @@
                 grid-row-start: 5;
                 grid-row-end: 6;
             }
+            .steps{
+                width: 90%;
+                height: 100px;
+                margin: 2%;
+                border-radius: 12px;
+                color: white;
+                background-color: #6EA05a;
+            }
 
         </style>
     </head>
@@ -115,8 +123,21 @@
             <main id="main_area"><!--My main Flex container -->
                 <section class="main_area_content"><!-- first Flex item-->
                     <h2>4 Easy Steps</h2>
+                    <details class="steps">
+                        <summary class="summary_pres">Step 1 - Create Meal List</summary>
+  
+                      </details>
+                      <details class="steps">
+                        <summary className="summary_pres">Step 2 - Add Slots and Guest</summary>
+
+                      </details>
+                      <details class="steps">
+                        <summary class="summary_pres">Step 3 - Share and Print</summary>
+                      </details>
                 </section>
-                <img class="main_area_content" src="" alt=""/><!--Second flex item-->
+                <section>
+                <img  src="img/lovefood_art.png" alt="picture of fresh water and limes"/><!--Second flex item-->
+                
             </main>
             <section id="as_seen_on"></section>
             <footer id="site_footer">
