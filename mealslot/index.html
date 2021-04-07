@@ -22,6 +22,25 @@
             body {
                 line-height:1;
             }
+
+            a[href*="signup"] {
+                padding: 5%;
+                border: 2px solid #6EA05a;
+                text-decoration: none;
+                color: black;
+                border-radius: 8px;
+                text-transform: uppercase;
+            }
+            a[href*="manage"] {
+                padding: 5%;
+                background-color: #6EA05a;
+                border: 2px solid #63a05a;
+                text-decoration: none;
+                color: black;
+                border-radius: 8px;
+                color: white;
+                text-transform: uppercase;
+            }
             #grid_container{
                 display: grid;
                 height: 100vh;
@@ -45,12 +64,19 @@
             #navstruct{
                 float: right;
                 border: 2px solid orangered;
-                margin-top: 2%;
+                margin-top: 4%;
+                min-width: 300px;
             }
             img[src*="logo.png"]{
                 float: left;
                 border: 2px solid orangered;
                 margin-top: 2%;
+            }
+            #art_image{
+                max-width: 100%;
+                display:block;
+                width: 60%;
+                margin: auto;
             }
             #banner{
                 border: 2px solid green;
@@ -102,6 +128,25 @@
                 background-color: #6EA05a;
             }
 
+    /* smaller than 1024 pixels */
+    @media screen and (max-width: 1024px) {
+        #head_struct{
+            background-color: #cd0000;
+        }
+    }
+    /* smaller than 768 pixels */
+    @media screen and (max-width: 768px) {
+        #head_struct{
+            background-color: #68ff22;
+        }
+    }
+    /* smaller than 480 pixels */
+    @media screen and (max-width: 580px) {
+        #head_struct{
+            background-color: #3700ff;
+        }
+    }        
+
         </style>
     </head>
     <body>
@@ -135,9 +180,9 @@
                         <summary class="summary_pres">Step 3 - Share and Print</summary>
                       </details>
                 </section>
-                <section>
-                <img  src="img/lovefood_art.png" alt="picture of fresh water and limes"/><!--Second flex item-->
-                
+                <div class="main_area_content">
+                    <img id="art_image" src="img/lovefood_art.png" alt="picture of fresh water and limes"/><!--Second flex item-->
+                </div>
             </main>
             <section id="as_seen_on"></section>
             <footer id="site_footer">
