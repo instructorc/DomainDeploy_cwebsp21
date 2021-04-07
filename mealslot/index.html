@@ -2,28 +2,108 @@
 <html>
     <head>
         <title>MealSlot.com | The #1 place to plan group meals!</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mealsot.com | The place to plan your meal with a group">
+        <meta name="keywords" content="meal planning, group meals, potluck">
+        <meta name="author" content="C. Fulton">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Internal Style Sheet-->
+        <style>
+           * {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+            }
+
+            body {
+            line-height:1;
+            } 
+
+            #grid_container{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 120px 650px 700px 300px 250px;
+                height: 100%;
+                width: 100%;
+            }
+            #headstruct{
+                border: 2px solid green;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+
+            }
+            #banner{
+                border: 2px solid orangered;
+                background-image: url("img/mealslot_banner_crop.png");
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                background-size: 100%;
+                background-position: center center;
+            }
+            #main_area{
+                border: 2px solid blue;
+                display: flex;
+                flex-wrap: wrap;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .main_content_area{
+                border: 2px solid black;
+                flex: 1 0 300px;
+                height: 550px;
+                margin: 2%;
+            }
+
+            #as_seen{
+                border: 2px solid purple;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            #home_footer{
+                border: 2px solid rgb(150, 9, 16);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+
+        </style>
     </head>
     <body>
-        <header>
-            <img src="logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li>Sign Up</li>
-                    <li>Manage Meals</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="banner">
-            <h1>POTLUCK?  BBQ? PARTY? 
-                INVITE OTHERS VIA TEXT 
-                OR EMAIL TO CONTRIBUTE</h1>
-            <div id="create_button">Create a Meal</div>
-        </section>
-        <main id="main_area">
-            <div class="main_content_area"> 4 Easy Steps</div>
-            <img src=""  class="main_content_area" alt="graphical image">
-        </main>
-        <section id="as_seen"></section>
-        <footer id="home_footer"></footer>
+        <div id="grid_container">
+            <header id="headstruct">
+                <img src="logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li>Sign Up</li>
+                        <li>Manage Meals</li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="banner">
+                <h1>POTLUCK?  BBQ? PARTY? 
+                    INVITE OTHERS VIA TEXT 
+                    OR EMAIL TO CONTRIBUTE</h1>
+                <div id="create_button">Create a Meal</div>
+            </section>
+            <main id="main_area">
+                <div class="main_content_area"> 4 Easy Steps</div>
+                <img src=""  class="main_content_area" alt="graphical image">
+            </main>
+            <section id="as_seen"></section>
+            <footer id="home_footer"></footer>
+        </div><!--Closing grid container-->
     </body>
 </html>
