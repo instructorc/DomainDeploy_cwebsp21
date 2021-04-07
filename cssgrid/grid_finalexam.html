@@ -27,8 +27,15 @@
                
             }
             #mainarea{
+                display: flex;
+                flex-wrap: wrap;
                 border: 2px solid red;
                 grid-area: main;
+            }
+            .boxes{
+                border: 2px solid black;
+                height: 400px;
+                flex: 1 0 200px;
             }
             #foot{
                 border: 2px solid blue;
@@ -41,7 +48,11 @@
         <div id="gridcontainer">
             <header id="headerstruct"></header>
             <aside id="sidebar"></aside>
-            <main id="mainarea"></main>
+            <main id="mainarea">
+                <div class="boxes"><h1>About Me</h1></div>
+                <div class="boxes"><h1>Directions</h1></div>
+                <div class="boxes"><h1>Contact Us</h1></div>
+            </main>
             <footer id="foot"></footer>
         </div>
     </body>
