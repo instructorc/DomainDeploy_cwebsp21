@@ -17,11 +17,29 @@
             body {
             line-height:1;
             }
+            a[href*="signup"] {
+                padding: 5%;
+                border: 2px solid #6EA05a;
+                text-decoration: none;
+                color: black;
+                border-radius: 8px;
+                text-transform: uppercase;
+            }
+            a[href*="manage"] {
+                padding: 5%;
+                background-color: #6EA05a;
+                border: 2px solid #63a05a;
+                text-decoration: none;
+                color: black;
+                border-radius: 8px;
+                color: white;
+                text-transform: uppercase;
+            }
 
             #grid_container{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: 100px 500px 3fr 300px 2fr;
+                grid-template-rows: 100px 500px 700px 300px 300px;
             }
             #site_contain{
                 width: 90%;
@@ -39,10 +57,12 @@
             }
             #nav_struct {
                 float: right;
+                margin-top: 2.3%;
+                min-width: 300px;
             }
             img[src*="logo.png"] {
                 float: left;
-                margin-top: 2%;
+                margin-top: 1.7%;
             }
             #banner{
                 width: 100%;
@@ -56,8 +76,9 @@
                 background-color: green;
             }
             #main_section{
-                width: 100%;
-                
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;                
                 grid-column-start: 1;
                 grid-column-end: 5;
                 grid-row-start: 3;
@@ -89,10 +110,8 @@
                 <div id="site_contain">
                     <img src="img/mealslot_master_logo.png" width="200" alt="logo">
                     <nav id="nav_struct">
-                        <ul>
-                            <li>Sign-up</li>
-                            <li>Manage Meals</li>
-                        </ul>
+                        <a href="/signup">Sign-up</a>
+                        <a href="/manage">Manage Meals</a>
                     </nav>
                 </div>
             </header>
