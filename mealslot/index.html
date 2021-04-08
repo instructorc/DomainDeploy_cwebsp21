@@ -4,6 +4,8 @@
         <title>MealSlot.com | #1 Destination to plan a group meal</title>
         <!--Internal CSS-->
         <style>
+
+
             * {
             margin:0;
             padding:0;
@@ -100,6 +102,28 @@
                 grid-row-start: 5;
                 grid-row-end: 6;
                 background-color: red;
+            }
+
+           /* smaller than 1024 pixels */
+            @media screen and (max-width: 1024px) {
+                #headstructure{
+                    background-color: #cd0000;
+                }
+            }
+            /* smaller than 768 pixels */
+            @media screen and (max-width: 768px) {
+                
+                #headstructure{
+                    background-color: #7722ff;
+                }
+
+
+            }
+            /* smaller than 500 pixels */
+            @media screen and (max-width: 500px) {
+                #headstructure{
+                    background-color: #1d751a;
+                }
             }
 
         </style>
