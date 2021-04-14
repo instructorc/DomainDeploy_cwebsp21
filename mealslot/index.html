@@ -7,8 +7,17 @@
         <meta name="keywords" content="meal planning, group meals, potluck">
         <meta name="author" content="C. Fulton">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">-->
         <!--Internal Style Sheet-->
         <style>
+            @font-face {
+            font-family: 'Chris';
+            src:  url('font/Anton-Regular.woff') format('woff'),
+                    url('myfont.woff') format('woff');
+            }
+
+
            * {
             margin:0;
             padding:0;
@@ -21,6 +30,7 @@
 
             body {
             line-height:1;
+            font-family: 'Chris', sans-serif;
             } 
 
             #grid_container{
@@ -84,7 +94,7 @@
     <body>
         <div id="grid_container">
             <header id="headstruct">
-                <img src="logo.png" alt="logo">
+                <img src="img/mealslot_master_logo.png" alt="logo" width="200">
                 <nav>
                     <ul>
                         <li>Sign Up</li>
