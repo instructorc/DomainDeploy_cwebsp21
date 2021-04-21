@@ -48,6 +48,12 @@
                 grid-row-end: 2;
 
             }
+            #desktop_nav{
+                float: right;
+            }
+            #mobile_nav{
+                display:none;
+            }
             #banner{
                 border: 2px solid orangered;
                 background-image: url("img/mealslot_banner_crop.png");
@@ -89,17 +95,45 @@
                 grid-row-end: 6;
             }
 
+            /* smaller than 1024 pixels */
+            @media screen and (max-width: 1024px) {
+                #headstruct{
+                    background-color: #cd0000;
+                }
+            }
+            /* smaller than 768 pixels */
+            @media screen and (max-width: 768px) {
+                #headstruct{
+                    background-color: blue;
+                }
+                #desktop_nav{
+                    display:none;
+                }
+                #mobile_nav{
+                    display: block;
+                }
+            }
+            /* smaller than 500 pixels */
+            @media screen and (max-width: 500px) {
+                #headstruct{
+                    background-color: green;
+                }
+            }
+
         </style>
     </head>
     <body>
         <div id="grid_container">
             <header id="headstruct">
                 <img src="img/mealslot_master_logo.png" alt="logo" width="200">
-                <nav>
+                <nav id="desktop_nav">
                     <ul>
                         <li>Sign Up</li>
                         <li>Manage Meals</li>
                     </ul>
+                </nav>
+                <nav id="mobile_nav">
+                    <p>&#9776; Menu </p>
                 </nav>
             </header>
             <section id="banner">
