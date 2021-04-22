@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Incorporating JS - INLINE </title>
+        <style>
+            #box{
+                border: 2px solid blue;
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+	</head>
+	<body>
+	    <div onclick="runStatements()"> Click Me </div>
+        <div id="box"></div>
+        <script>
+
+            function runStatements(){
+                window.alert("Triggered by Inline JS"); 
+                box.style.backgroundColor ="#cd0000"; 
+            }
+        </script>
+    </body>
+</html>
