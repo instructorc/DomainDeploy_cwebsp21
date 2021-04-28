@@ -12,6 +12,10 @@
                 flex-wrap: wrap;
                 margin: auto;
             }
+            #nbagreats{
+                max-width: 100%;
+            }
+
             #box_one{
                 flex: 1 0 250px;
                 height: 500px;
@@ -77,9 +81,15 @@
     <body>
         
         <div id="container">
-            <section id="box_one"> <h1>BOX 1</h1></section>
+            <section id="box_one"><img src="./nba_greats.jpg" id="nbagreats" alt="Picture of NBA Greats"> <h1>BOX 1</h1></section>
             <section id="box_two"><h1>BOX 2</h1></section>
-            <section id="box_three"><h1>BOX 3</h1></section>
+            <section id="box_three">
+                <picture>
+                    <source media="(max-width: 1024px)" srcset="kobe.jpg" >
+                    <source media="(max-width: 768px)" srcset="nba_ball.jpg" >
+                    <img src="./nba_greats.jpg" id="nbagreats" alt="Picture of NBA Greats">
+                  </picture>
+            </section>
             <section id="box_four"><h1>BOX 4</h1></section>
         </div>
     </body>
