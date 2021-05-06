@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+       <head>
+	
+		<title>Working with named Functions</title>
+        <style>
+            div{
+                border: 2px solid black;
+            }
+            #esteban{
+                border: 2px solid orangered;
+                height: 200px;
+                width: 200px;
+            }
+
+
+        </style>
+	</head>
+	<body>
+		<div> Click Me </div>
+        <section id="esteban"></section>
+        <script>
+
+            document.getElementsByTagName('div')[0].addEventListener('click', function(){
+                //Declared the variable
+                var title, url, doctype;
+                var colors = ["red", "blue", "green"];
+                title = document.title;
+                url = document.URL;
+                doctype = document.doctype.name;
+                document.querySelector('#esteban').textContent = "This is Esteban's Box";
+                document.querySelector('#esteban').style.backgroundColor = colors[0];
+                document.body.style.backgroundColor = colors[2];
+                //Alert doctype, url and title
+                window.alert(` Title: ${title}\nURL: ${url}\nDoctype: ${doctype} `);
+            });
+
+        </script>
+	</body>
+</html>

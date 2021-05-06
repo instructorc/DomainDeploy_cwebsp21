@@ -147,7 +147,7 @@
 										</div>
 										<div class="field half">
 											<div class="col-12">
-												<select name="demo-category" id="favcolor">
+												<select name="demo-category" onchange="changeColor(this.value)" id="favcolor">
 													<option value="">- Select Color -</option>
 													<option value="red">Red</option>
 													<option value="blue">Blue</option>
@@ -212,16 +212,27 @@
 					</footer>
 
 			</div>
+			<!--Internal JavaScript-->
 			<script>
-
+				/**Name function**/
 				function getInfo(){
-					var name = document.getElementById('name').value;
-					var email = document.getElementById('email').value;
-					var message = document.getElementById('message').value;
-					var favoritColor =document.getElementById('favcolor').value;
+					var name, email, message, favoriteColor;
+					 name = document.getElementById('name').value;
+					email = document.getElementById('email').value;
+					message = document.getElementById('message').value;
+					favoriteColor =document.getElementById('favcolor').value;
 
-					console.log(name + " " + email + " " + message);
-					evert.preventDefault();
+					document.output.innerHTML = name + " " + email + " " + message;
+					event.preventDefault();
+				}
+
+				function changeColor(aColor){
+					var colors = ["blue", "red", "green"]
+					if(aColor == "blue"){
+						document.querySelector('#header.reveal').style.backgroundColor = colors[0];
+					}else if(aColor == "red"){
+						document.querySelector('#header.reveal').style.backgroundColor = colors[1];
+					}
 				}
 
 			</script>
