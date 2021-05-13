@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes Chris {
+                0%   {top: 0px; left: 0px; background-image: url('https://www.stthomas.edu/media/schooloflaw/TwinCities.jpg'); background-size: contain;}
+                25%  {top: 0px; left: 500px; background-image: url('https://mspmag.com/downloads/49129/download/shutterstock_763150327.jpg?cb=fcadab357b7431d4c1a0818a35b53a51&w=1280'); background-size: contain;}
+                50%  {top: 500px; left: 500px; background-image: url('https://i.ytimg.com/vi/NzrzPdLboSE/maxresdefault.jpg'); background-size: contain;}
+                75%  {top: 500px; left: 0px; background-image: url('https://image.shutterstock.com/image-photo/minneapolis-cityscape-dusk-260nw-758169985.jpg'); background-size: contain;}
+                100% {top: 0px; left: 0px; background-image: url('https://higherlogicdownload.s3.amazonaws.com/CXPA/3c0cdd9e-835b-46df-811e-f79b3c707197/UploadedImages/Twin%20Cities%202.jpg'); background-size: contain;}
+            }
+
+            @keyframes Chris_box {
+                0%   {top: 0px; left: 0px; background-color:orangered; background-size: contain;}
+                25%  {top: 0px; left: 500px; background-image: url('https://mspmag.com/downloads/49129/download/shutterstock_763150327.jpg?cb=fcadab357b7431d4c1a0818a35b53a51&w=1280'); background-size: contain;}
+                50%  {top: 500px; left: 500px; background-image: url('https://i.ytimg.com/vi/NzrzPdLboSE/maxresdefault.jpg'); background-size: contain;}
+                75%  {top: 500px; left: 0px; background-image: url('https://image.shutterstock.com/image-photo/minneapolis-cityscape-dusk-260nw-758169985.jpg'); background-size: contain;}
+                100% {top: 0px; left: 0px; background-image: url('https://higherlogicdownload.s3.amazonaws.com/CXPA/3c0cdd9e-835b-46df-811e-f79b3c707197/UploadedImages/Twin%20Cities%202.jpg'); background-size: contain;}
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                position: relative;
+                -webkit-animation: Chris 5s infinite; 
+            }
+
+            #div_two {
+                width: 100px;
+                height: 100px;
+                background: red;
+                position: relative;
+                -webkit-animation: Chris_box 5s infinite; 
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <section id="div_two"></section>
+
+    </body>
+</html>
